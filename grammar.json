@@ -1,0 +1,16 @@
+{
+  "version": "1.1",
+  "language": "de",
+  "mappings": {
+    "skill": ["skills", "abilities"],
+    "story": ["stories", "examples"],
+    "company_project": ["project", "initiative"]
+  },
+  "sections": {
+    "Greeting": { "path": "templates/greeting.json" },
+    "Introduction": { "path": "templates/introduction.json" },
+    "Experience": { "path": "templates/experience.json" },
+    "Contribution": { "path": "templates/contribution.json" },
+    "Closing": { "path": "templates/closing.json" }
+  }
+}

@@ -1,0 +1,31 @@
+{
+    "repeat": 1,
+    "include_if": { "job_field": "company_project" },
+    "templates": [
+      {
+        "template": "Ich bin überzeugt, dass meine Kenntnisse in [skill] einen wertvollen Beitrag zu Ihrem Projekt [company_project] leisten können, insbesondere im Bereich [focus_area].",
+        "placeholders": ["skill", "Feldprototyp", "focus_area"],
+        "requires": ["skill", "company_project"],
+        "fallback": "Ich bin überzeugt, dass meine Kenntnisse in [skill] einen wertvollen Beitrag zu Ihrem Unternehmen leisten können.",
+        "weight": 1.0
+      },
+      {
+        "template": "Durch meine Erfahrung mit [skill] kann ich helfen, Ihre Ziele im Projekt [company_project] effizienter zu erreichen.",
+        "placeholders": ["skill", "company_project"],
+        "requires": ["skill"],
+        "conditions": [
+          { "field": "company_project", "exists": true }
+        ],
+        "fallback": "Durch meine Erfahrung mit [skill] kann ich zur Effizienz Ihrer Projekte beitragen.",
+        "weight": 1.0
+      },
+      {
+        "template": "Ich sehe eine enge Verbindung zwischen meinen Kenntnissen in [skill] und den Herausforderungen, die Ihr Projekt [company_project] adressiert.",
+        "placeholders": ["skill", "company_project"],
+        "requires": ["skill"],
+        "fallback": "Ich sehe eine enge Verbindung zwischen meinen Kenntnissen in [skill] und den Zielen Ihres Unternehmens.",
+        "weight": 1.0
+      }
+    ]
+  }
+  

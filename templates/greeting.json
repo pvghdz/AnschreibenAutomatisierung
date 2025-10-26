@@ -1,0 +1,9 @@
+{
+    "repeat": 1,
+    "templates": [
+      { "template": "Sehr geehrte Damen und Herren,", "requires": [] },
+      { "template": "Sehr geehrte Frau [Name],", "requires": ["Name"], "fallback": "Sehr geehrte Damen und Herren," },
+      { "template": "Sehr geehrter Herr [Name],", "requires": ["Name"], "fallback": "Sehr geehrte Damen und Herren," }
+    ]
+  }
+  
